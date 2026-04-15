@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="4yR-L-PEyNHsAwfSApYKpsi83eFjPAa2BE5CV1-C2Co" />
+    <meta list="description"
+        content="Discover the portfolio of Théobert, a developer specializing in innovative web solutions, UI/UX design and visual identity in Madagascar.">
+    <title>théobert</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">théobert</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active" data-i18n="nav.home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+                <li><a href="#work" class="nav-link" data-i18n="nav.work">Work</a></li>
+                <li><a href="#competence" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            <!-- Language selector -->
+            <div class="nav-actions">
+                <label for="langSelect" class="visually-hidden">Language</label>
+                <select id="langSelect" aria-label="Language selector" class="lang-select">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="zh">中文</option>
+                    <option value="it">Italiano</option>
+                    <option value="es">Español</option>
+                    <option value="de">Deutsch</option>
+                    <option value="mg">Malagasy</option>
+                </select>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-wrapper">
+                <picture>
+                    <source srcset="IMG_1237 3.webp" type="image/webp">
+                    <img src="IMG_1237 3.png" alt="Profile" class="profile-img" loading="lazy" width="220" height="220">
+                </picture>
+                <div class="profile-glow"></div>
+            </div>
+            <h1 class="hero-title">théobert</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">Creative Designer & Developer</p>
+            <p class="hero-description" data-i18n="hero.description">Crafting digital experiences with passion and
+                innovation</p>
+            <div class="cta-buttons">
+                <a href="#work" class="cta-primary" data-i18n="cta.viewWork">View My Work</a>
+                <a href="#contact" class="cta-secondary" data-i18n="cta.getInTouch">Get In Touch</a>
+            </div>
+        </div>
+        <div class="floating-elements">
+            <div class="float-1"></div>
+            <div class="float-2"></div>
+            <div class="float-3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-container">
+            <h2 class="section-title" data-i18n="about.title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-i18n="about.p1">I'm a passionate creative professional with a unique blend of design and
+                        development skills. My journey revolves around transforming ideas into stunning digital
+                        realities.</p>
+                    <p data-i18n="about.p2">With a keen eye for aesthetics and a technical mindset, I create experiences
+                        that not only look beautiful but function flawlessly. Every project is an opportunity to push
+                        boundaries and explore new possibilities.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p data-i18n="stats.projects">Projects</p>
+                        </div>
+                        <div class="stat">
+                            <h3>03+</h3>
+                            <p data-i18n="stats.clients">Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5month+</h3>
+                            <p data-i18n="stats.years">Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="creative-shape shape-1"></div>
+                    <div class="creative-shape shape-2"></div>
+                    <div class="creative-shape shape-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work">
+        <div class="section-container">
+            <h2 class="section-title" data-i18n="work.title">My Work</h2>
+            <div class="work-grid">
+                <div class="work-card">
+                    <div class="work-image">
+                        <div class="image-placeholder gradient-1"></div>
+                    </div>
+                    <div class="work-info">
+                        <h3>Digital Experience</h3>
+                        <p>A modern web platform designed for seamless user interaction</p>
+                        <div class="work-tags">
+                            <span>Design</span>
+                            <span>Web</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <div class="work-image">
+                        <div class="image-placeholder gradient-2"></div>
+                    </div>
+                    <div class="work-info">
+                        <h3>Brand Identity</h3>
+                        <p>Complete visual branding system for a creative agency</p>
+                        <div class="work-tags">
+                            <span>Branding</span>
+                            <span>Identity</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <div class="work-image">
+                        <div class="image-placeholder gradient-3"></div>
+                    </div>
+                    <div class="work-info">
+                        <h3>Interactive App</h3>
+                        <p>Engaging mobile application with stunning animations</p>
+                        <div class="work-tags">
+                            <span>Development</span>
+                            <span>Mobile</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <div class="work-image">
+                        <div class="image-placeholder gradient-4"></div>
+                    </div>
+                    <div class="work-info">
+                        <h3>Visual Design</h3>
+                        <p>Artistic direction and visual concepts for campaigns</p>
+                        <div class="work-tags">
+                            <span>Art</span>
+                            <span>Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <div class="work-image">
+                        <div class="image-placeholder gradient-5"></div>
+                    </div>
+                    <div class="work-info">
+                        <h3>Product Design</h3>
+                        <p>User-centered design approach for innovative products</p>
+                        <div class="work-tags">
+                            <span>UX/UI</span>
+                            <span>Product</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <div class="work-image">
+                        <div class="image-placeholder gradient-6"></div>
+                    </div>
+                    <div class="work-info">
+                        <h3>Creative Direction</h3>
+                        <p>Conceptual work pushing creative boundaries</p>
+                        <div class="work-tags">
+                            <span>Creative</span>
+                            <span>Direction</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competence Section -->
+    <section id="competence" class="competence">
+        <div class="section-container">
+            <h2 class="section-title" data-i18n="skills.title">My Skills</h2>
+            <div class="competence-grid">
+                <div class="competence-card">
+                    <div class="comp-icon">🌌</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive and beautiful user interfaces</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 95%"></div>
+                    </div>
+                </div>
+
+                <div class="competence-card">
+                    <div class="comp-icon">💻</div>
+                    <h3>Back-end</h3>
+                    <p>Building and performant websites</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 90%"></div>
+                    </div>
+                </div>
+
+                <div class="competence-card">
+                    <div class="comp-icon">✨</div>
+                    <h3>Library</h3>
+                    <p>Creating engaging motion and interactive elements</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <div class="competence-card">
+                    <div class="comp-icon">🎬</div>
+                    <h3>Frameworks</h3>
+                    <p>Developing cohesive brand identities and strategies</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 75%"></div>
+                    </div>
+                </div>
+
+                <div class="competence-card">
+                    <div class="comp-icon">🚀</div>
+                    <h3>Front-end</h3>
+                    <p>Modern frameworks and cutting-edge technologies</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 92%"></div>
+                    </div>
+                </div>
+
+
+                <div class="competence-card">
+                    <div class="comp-icon">🛠️</div>
+                    <h3>DevOps</h3>
+                    <p>Modern technologies and tools-edge</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 92%"></div>
+                    </div>
+                </div>
+
+                <div class="competence-card">
+                    <div class="comp-icon">📱</div>
+                    <h3>Mobile Development</h3>
+                    <p>Optimized experiences for all device sizes</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <h2 class="section-title" data-i18n="contact.title">Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-i18n="contact.heading">Get In Touch</h3>
+                    <p data-i18n="contact.description">I'm always interested in hearing about new projects and
+                        opportunities.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="label" data-i18n="contact.emailLabel">Email:</span>
+                            <a href="mailto:theobertronaldo@gmail.com">theobertronaldo@gmail.com</a>
+                            <span class="label" data-i18n="contact.telLabel">Tel:</span>
+                            <a href="tel:+261376100756">+261 37 61 007 56</a>
+                            <a href="contact"></a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="label" data-i18n="contact.socialLabel">Social:</span>
+                            <div class="social-links">
+                                <a href="https://www.youtube.com/channel/UCpSaBf5SvAgOXeF3CYUDlZg"
+                                    class="social-link">YouTube</a>
+                                <a href="#" class="social-link">Facebook</a>
+                                <a href="https://www.linkedin.com/in/th%C3%A9obert-rasivifaniriandrenibe-9ba258287/"
+                                    class="social-link">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <input type="text" data-i18n-placeholder="form.namePlaceholder" placeholder="Your Name" required>
+                    <input type="email" data-i18n-placeholder="form.emailPlaceholder" placeholder="Your Email" required>
+                    <textarea data-i18n-placeholder="form.messagePlaceholder" placeholder="Your Message" rows="5"
+                        required></textarea>
+                    <button type="submit" class="submit-btn" data-i18n="form.submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 theobert. allright reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
