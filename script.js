@@ -61,15 +61,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Contact form handling (client-side)
+    // Contact form handling with AJAX submission to Formspree
     const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
 
-            const name = (this.querySelector('input[placeholder="Your Name"]') || {}).value || '';
-            const email = (this.querySelector('input[placeholder="Your Email"]') || {}).value || '';
-            const message = (this.querySelector('textarea[placeholder="Your Message"]') || {}).value || '';
+            const name = (this.querySelector('input[name="name"]') || {}).value || '';
+            const email = (this.querySelector('input[name="email"]') || {}).value || '';
+            const message = (this.querySelector('textarea[name="message"]') || {}).value || '';
 
             if (!name.trim() || !email.trim() || !message.trim()) {
                 alert('Please fill in all fields.');
@@ -83,8 +83,43 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            alert('Thank you for your message! I will get back to you soon.');
-            this.reset();
+            // Disable submit button to prevent multiple submissions
+            const submitBtn = this.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+
+            // Prepare form data
+            const formData = new FormData();
+            formData.append('name', name);
+            formData.append('email', email);
+            formData.append('message', message);
+
+            // Submit to Formspree
+            fetch('https://formspree.io/f/xjgjglja', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert('Thank you for your message! I will get back to you soon.');
+                    this.reset();
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Oops! There was a problem submitting your form. Please try again later.');
+            })
+            .finally(() => {
+                // Re-enable submit button
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalText;
+            });
         });
     }
 
