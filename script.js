@@ -83,7 +83,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // If validation passes, let the form submit normally to Formspree
         });
     }
 
@@ -125,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'about.p2': 'With a keen eye for aesthetics and a technical mindset, I create experiences that not only look beautiful but function flawlessly. Every project is an opportunity to push boundaries and explore new possibilities.',
             'stats.projects': 'Projects',
             'stats.clients': 'Clients',
-            'stats.years': 'Years Experience',
+            'stats.years': 'Experience',
             'work.title': 'My Work',
             'skills.title': 'My Skills',
             'contact.title': "Let's Connect",
@@ -154,7 +153,8 @@ document.addEventListener('DOMContentLoaded', () => {
             'about.p2': "Avec un sens aigu de l'esthétique et une approche technique, je crée des expériences à la fois belles et fonctionnelles. Chaque projet est une opportunité d'innover.",
             'stats.projects': 'Projets',
             'stats.clients': 'Clients',
-            'stats.years': "Années d'expérience",
+            'Month.experience': '5mois+',
+            'stats.years': "Expérience",
             'work.title': 'Mes travaux',
             'skills.title': 'Mes compétences',
             'contact.title': 'Entrons en contact',
@@ -183,6 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'about.p2': '我以敏锐的审美和技术思维，创造既美观又高效的体验。每个项目都是突破边界的机会。',
             'stats.projects': '项目',
             'stats.clients': '客户',
+            'Month.experience': '5+',
             'stats.years': '工作经验',
             'work.title': '我的作品',
             'skills.title': '我的技能',
@@ -212,7 +213,8 @@ document.addEventListener('DOMContentLoaded', () => {
             'about.p2': 'Creo esperienze che sono belle e funzionano perfettamente, sempre spingendo i limiti.',
             'stats.projects': 'Progetti',
             'stats.clients': 'Clienti',
-            'stats.years': 'Anni di esperienza',
+            'Month.experience': '5+',
+            'stats.years': 'Esperienza',
             'work.title': 'I miei lavori',
             'skills.title': 'Le mie competenze',
             'contact.title': 'Mettiamoci in contatto',
@@ -241,7 +243,8 @@ document.addEventListener('DOMContentLoaded', () => {
             'about.p2': 'Creo experiencias que no solo son bonitas sino también funcionales. Cada proyecto es una oportunidad para innovar.',
             'stats.projects': 'Proyectos',
             'stats.clients': 'Clientes',
-            'stats.years': 'Años de experiencia',
+            'Month.experience': '5+',
+            'stats.years': 'Experiencia',
             'work.title': 'Mi trabajo',
             'skills.title': 'Mis habilidades',
             'contact.title': 'Conectemos',
@@ -270,7 +273,8 @@ document.addEventListener('DOMContentLoaded', () => {
             'about.p2': 'Ich gestalte Erfahrungen, die schön aussehen und einwandfrei funktionieren.',
             'stats.projects': 'Projekte',
             'stats.clients': 'Kunden',
-            'stats.years': 'Jahre Erfahrung',
+            'Month.experience': '5+',
+            'stats.years': 'Erfahrung',
             'work.title': 'Meine Arbeiten',
             'skills.title': 'Meine Fähigkeiten',
             'contact.title': 'Lass uns verbinden',
@@ -299,7 +303,8 @@ document.addEventListener('DOMContentLoaded', () => {
             'about.p2': 'Mamorona traikefa izay tsara tarehy ary miasa tsara.',
             'stats.projects': 'Tetikasa',
             'stats.clients': 'Mpiasa',
-            'stats.years': 'Taona traikefa',
+            'Month.experience': '5volana+',
+            'stats.years': 'Traikefa',
             'work.title': 'Asako',
             'skills.title': 'Fahaiza-manaoko',
             'contact.title': 'Andeha hifandray',

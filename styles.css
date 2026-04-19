@@ -32,6 +32,7 @@
     --spacing-lg: 24px;
     --spacing-xl: 32px;
     --spacing-2xl: 48px;
+    --spacing-3xl: 50px;
     
     /* Typography */
     --font-primary: 'Inter', 'Segoe UI', sans-serif;
@@ -413,7 +414,6 @@ body {
     border-radius: var(--radius-full);
     text-decoration: none;
     font-weight: 600;
-    border: 2px solid transparent;
     transition: var(--transition);
     font-size: var(--font-size-sm);
     cursor: pointer;
@@ -845,7 +845,7 @@ body {
 }
 
 /* ============================================
-   RESPONSIVE DESIGN
+   MOBILE RESPONSIVE DESIGN
    ============================================ */
 
 @media (max-width: 768px) {
@@ -855,7 +855,7 @@ body {
         --font-size-4xl: 42px;
     }
 
-    .nav-links {
+    .nav-links, .nav-actions {
         gap: var(--spacing-lg);
     }
 
@@ -865,7 +865,7 @@ body {
 
     .nav-links {
         position: absolute;
-        top: 60px;
+        top: -60px;
         left: 0;
         right: 0;
         flex-direction: column;
@@ -883,8 +883,8 @@ body {
 
     .nav-actions {
         position: absolute;
-        top: 12px;
         right: var(--spacing-lg);
+        padding: var(--spacing-3xl);
         gap: var(--spacing-sm);
     }
 

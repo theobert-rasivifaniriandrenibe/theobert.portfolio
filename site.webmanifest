@@ -1,6 +1,6 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "théobert-portfolio",
+  "short_name": "théobert",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
